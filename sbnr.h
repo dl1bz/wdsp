@@ -3,18 +3,17 @@
 
 #include <specbleach_adenoiser.h>
 
-typedef struct _sbnr
-{
-	int run;
-    	int position;
-        double *in;
-        double *out;
-        float reduction_amount;
-        float smoothing_factor;
-        float whitening_factor;
-        float noise_rescale;
-        float post_filter_threshold;
-        SpectralBleachHandle st;
+typedef struct _sbnr {
+  int run;
+  int position;
+  double *in;
+  double *out;
+  float reduction_amount;
+  float smoothing_factor;
+  float whitening_factor;
+  float noise_rescale;
+  float post_filter_threshold;
+  SpectralBleachHandle st;
 } sbnr, *SBNR;
 
 // define the public api of this module
