@@ -61,6 +61,7 @@ emnr.c\
 emph.c\
 eq.c\
 fcurve.c\
+FDnoiseIQ.c\
 fir.c\
 firmin.c\
 fmd.c\
@@ -130,6 +131,7 @@ emph.h\
 eq.h\
 fastmath.h\
 fcurve.h\
+FDnoiseIQ.h\
 fir.h\
 firmin.h \
 fmd.h\
@@ -196,6 +198,7 @@ emnr.o\
 emph.o\
 eq.o\
 fcurve.o\
+FDnoiseIQ.o\
 fir.o\
 firmin.o\
 fmd.o\

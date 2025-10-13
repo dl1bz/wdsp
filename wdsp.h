@@ -4,6 +4,8 @@
 extern "C" {
 #endif
 
+#define WDSP127
+
 #define INREAL    float
 #define OUTREAL   float
 #define dINREAL   float
@@ -428,7 +430,11 @@ extern void xeerEXTF (int id, float* inI, float* inQ, float* outI, float* outQ, 
 //
 // Interfaces from emnr.c
 //
-
+extern void SetRXAEMNRpost2Run(int channel, int run);
+extern void SetRXAEMNRpost2Factor(int channel, double factor);
+extern void SetRXAEMNRpost2Nlevel(int channel, double nlevel);
+extern void SetRXAEMNRpost2Taper(int channel, int taper);
+extern void SetRXAEMNRpost2Rate(int channel, double tc);
 extern void SetRXAEMNRRun (int channel, int run);
 extern void SetRXAEMNRgainMethod (int channel, int method);
 extern void SetRXAEMNRnpeMethod (int channel, int method);
